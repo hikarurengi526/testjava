@@ -128,7 +128,7 @@ public class KitchenSinkController {
         //System.out.println("Welcome to Java Programming!");
         //String replyToken = event.getReplyToken();
         //this.replyText(replyToken,"Got");
-        String numberAsString ="";
+        String numberAsString = "";
         handleHeavyContent(
                 event.getReplyToken(),
                 event.getMessage().getId(),
