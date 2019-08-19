@@ -126,8 +126,6 @@ public class KitchenSinkController {
         // You need to install ImageMagick
         // test
         //System.out.println("Welcome to Java Programming!");
-        //String replyToken = event.getReplyToken();
-        //this.replyText(replyToken,"Got");
         //reply(event.getReplyToken(),
         //new ImageMessage(jpg.getUri(), previewImg.getUri()));
         String numberAsString = "";
@@ -150,6 +148,8 @@ public class KitchenSinkController {
                                 jpg.path.toString(),
                                 previewImg.path.toString());
                     }
+                 String replyToken = event.getReplyToken();
+                 this.replyText(replyToken,"Got");
                 });
     }
 
