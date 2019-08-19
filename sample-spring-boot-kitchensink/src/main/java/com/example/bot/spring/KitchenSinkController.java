@@ -128,6 +128,8 @@ public class KitchenSinkController {
         //System.out.println("Welcome to Java Programming!");
         //String replyToken = event.getReplyToken();
         //this.replyText(replyToken,"Got");
+        //reply(event.getReplyToken(),
+        //new ImageMessage(jpg.getUri(), previewImg.getUri()));
         String numberAsString = "";
         handleHeavyContent(
                 event.getReplyToken(),
@@ -148,8 +150,6 @@ public class KitchenSinkController {
                                 jpg.path.toString(),
                                 previewImg.path.toString());
                     }
-                    //reply(event.getReplyToken(),
-                          //new ImageMessage(jpg.getUri(), previewImg.getUri()));
                 });
     }
 
