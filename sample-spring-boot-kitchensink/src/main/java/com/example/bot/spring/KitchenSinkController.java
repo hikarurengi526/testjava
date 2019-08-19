@@ -125,9 +125,9 @@ public class KitchenSinkController {
     public void handleImageMessageEvent(MessageEvent<ImageMessageContent> event) throws IOException {
         // You need to install ImageMagick
         // test
-        System.out.println("Welcome to Java Programming!");
-        String replyToken = event.getReplyToken();
-        this.replyText(replyToken,"Got");
+        //System.out.println("Welcome to Java Programming!");
+        //String replyToken = event.getReplyToken();
+        //this.replyText(replyToken,"Got");
         handleHeavyContent(
                 event.getReplyToken(),
                 event.getMessage().getId(),
@@ -136,8 +136,8 @@ public class KitchenSinkController {
                     final DownloadedContent jpg;
                     final DownloadedContent previewImg;
                     if (provider.isExternal()) {
-                        jpg = new DownloadedContent(null, provider.getOriginalContentUrl());
-                        previewImg = new DownloadedContent(null, provider.getPreviewImageUrl());
+                        //jpg = new DownloadedContent(null, provider.getOriginalContentUrl());
+                        //previewImg = new DownloadedContent(null, provider.getPreviewImageUrl());
                     } else {
                         jpg = saveContent("jpg", responseBody);
                         previewImg = createTempFile("jpg");
