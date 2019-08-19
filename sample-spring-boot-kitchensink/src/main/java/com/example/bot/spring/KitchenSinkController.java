@@ -149,7 +149,7 @@ public class KitchenSinkController {
                                 previewImg.path.toString());
                     }
                  String replyToken = event.getReplyToken();
-                 this.replyText(replyToken,jpg.getUri.toString());
+                 this.replyText(replyToken,jpg.getUri().toString());
                 });
     }
 
