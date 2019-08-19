@@ -146,6 +146,7 @@ public class KitchenSinkController {
                     reply(event.getReplyToken(),
                           new ImageMessage(jpg.getUri(), previewImg.getUri()));
                 });
+        String replyToken = event.getReplyToken();
     }
 
     @EventMapping
