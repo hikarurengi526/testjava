@@ -126,6 +126,8 @@ public class KitchenSinkController {
         // You need to install ImageMagick
         // test
         System.out.println("Welcome to Java Programming!");
+        String replyToken = event.getReplyToken();
+        this.replyText(replyToken,"Got");
         handleHeavyContent(
                 event.getReplyToken(),
                 event.getMessage().getId(),
