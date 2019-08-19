@@ -124,6 +124,7 @@ public class KitchenSinkController {
     @EventMapping
     public void handleImageMessageEvent(MessageEvent<ImageMessageContent> event) throws IOException {
         // You need to install ImageMagick
+        // test
         handleHeavyContent(
                 event.getReplyToken(),
                 event.getMessage().getId(),
