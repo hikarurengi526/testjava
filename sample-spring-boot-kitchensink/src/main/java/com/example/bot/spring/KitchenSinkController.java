@@ -148,8 +148,8 @@ public class KitchenSinkController {
                                 jpg.path.toString(),
                                 previewImg.path.toString());
                     }
-                    reply(event.getReplyToken(),
-                          new ImageMessage(jpg.getUri(), previewImg.getUri()));
+                    //reply(event.getReplyToken(),
+                          //new ImageMessage(jpg.getUri(), previewImg.getUri()));
                 });
     }
 
