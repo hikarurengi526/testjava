@@ -128,6 +128,7 @@ public class KitchenSinkController {
         //System.out.println("Welcome to Java Programming!");
         //String replyToken = event.getReplyToken();
         //this.replyText(replyToken,"Got");
+        String numberAsString ="";
         handleHeavyContent(
                 event.getReplyToken(),
                 event.getMessage().getId(),
@@ -139,13 +140,13 @@ public class KitchenSinkController {
                         jpg = new DownloadedContent(null, provider.getOriginalContentUrl());
                         previewImg = new DownloadedContent(null, provider.getPreviewImageUrl());
                     } else {
-                        /*jpg = saveContent("jpg", responseBody);
+                        jpg = saveContent("jpg", responseBody);
                         previewImg = createTempFile("jpg");
                         system(
                                 "convert",
                                 "-resize", "240x",
                                 jpg.path.toString(),
-                                previewImg.path.toString());*/
+                                previewImg.path.toString());
                     }
                     reply(event.getReplyToken(),
                           new ImageMessage(jpg.getUri(), previewImg.getUri()));
