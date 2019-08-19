@@ -136,16 +136,16 @@ public class KitchenSinkController {
                     final DownloadedContent jpg;
                     final DownloadedContent previewImg;
                     if (provider.isExternal()) {
-                        //jpg = new DownloadedContent(null, provider.getOriginalContentUrl());
-                        //previewImg = new DownloadedContent(null, provider.getPreviewImageUrl());
+                        jpg = new DownloadedContent(null, provider.getOriginalContentUrl());
+                        previewImg = new DownloadedContent(null, provider.getPreviewImageUrl());
                     } else {
-                        jpg = saveContent("jpg", responseBody);
+                        /*jpg = saveContent("jpg", responseBody);
                         previewImg = createTempFile("jpg");
                         system(
                                 "convert",
                                 "-resize", "240x",
                                 jpg.path.toString(),
-                                previewImg.path.toString());
+                                previewImg.path.toString());*/
                     }
                     reply(event.getReplyToken(),
                           new ImageMessage(jpg.getUri(), previewImg.getUri()));
